@@ -1,8 +1,78 @@
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: sans-serif;
 }
 
-@media screen and (max-width: 850px) {
+hr {
+  border-width: 1px;
+  width: 100%;
+  text-align: left;
+  margin-left: 0
+}
+
+a {
+  color: dodgerblue;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Extra small devices (phones, 600px and down) */
+/* @media only screen and (max-width: 600px) {
+  ...
+} */
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/* @media only screen and (min-width: 600px) {
+  ...
+} */
+
+/* Medium devices (landscape tablets, 768px and up) */
+/* @media only screen and (min-width: 768px) {
+  ...
+} */
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .center {
+    display: flex;
+    margin-right: 20%;
+    margin-left: 20%;
+    flex-direction: column;
+    justify-content: space-around;
+    max-width: 1000px;
+  }
+
+  .card {
+    display: flex;
+    margin-top: 2%;
+    margin-bottom: 2%;
+  }
+
+  .profile {
+    height: auto;
+    width: auto;
+    max-width: 100%;
+    max-height: 100%;
+    min-width: 200px;
+    border-radius: 50%;
+    flex: 3;
+  }
+
+  .contact {
+    margin-left: 5%;
+    margin-right: 5%;
+    flex: 6
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  ...
+}
+
+/* @media screen and (max-width: 850px) {
 
   .center {
     margin-right: 0%;
@@ -69,4 +139,4 @@ body {
     margin-right: 5%;
     flex: 6
   }
-}
+} */
