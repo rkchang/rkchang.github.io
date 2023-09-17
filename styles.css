@@ -76,7 +76,7 @@ p {
     margin-left: 10%;
     flex-direction: column;
     justify-content: space-around;
-    max-width: 1000px;
+    max-width: 650px;
   }
 
   .card {
@@ -112,7 +112,7 @@ p {
     margin-left: 10%;
     flex-direction: column;
     justify-content: space-around;
-    max-width: 1000px;
+    max-width: 650px;
   }
 
   .card {
@@ -148,7 +148,7 @@ p {
     margin-left: 10%;
     flex-direction: column;
     justify-content: space-around;
-    max-width: 1000px;
+    max-width: 650px;
     height: 100%;
   }
 
@@ -184,7 +184,7 @@ p {
     margin-left: 20%;
     flex-direction: column;
     justify-content: space-around;
-    max-width: 1000px;
+    max-width: 650px;
   }
 
   .card {
