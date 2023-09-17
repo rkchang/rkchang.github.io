@@ -1,0 +1,138 @@
+
+\documentclass{article}
+\usepackage{enumitem}
+\usepackage{float}
+\input{glyphtounicode}
+%Lower amount of white space around headers
+\usepackage[compact]{titlesec}
+\titlespacing\section{0pt}{0pt plus 0pt minus 0pt}{0pt plus 0pt minus 0pt}
+\titlespacing\subsection{0pt}{0pt plus 0pt minus 0pt}{0pt plus 0pt minus 0pt}
+% spacing: how to read {12pt plus 4pt minus 2pt}
+%           12pt is what we would like the spacing to be
+%           plus 4pt means that TeX can stretch it by at most 4pt
+%           minus 2pt means that TeX can shrink it by at most 2pt
+%       This is one example of the concept of, 'glue', in TeX
+
+% Ensure resume is parsable by ATS
+\input{glyphtounicode}
+\pdfgentounicode=1
+
+\usepackage{geometry}
+\geometry{margin=1in}
+\setcounter{secnumdepth}{0}
+\setlength{\parindent}{0pt}
+\begin{document}
+\begin{center}
+    {\huge\textbf{Raymond Chang}} \\
+    Email: rkchang@uwaterloo.ca \\
+    LinkedIn: www.linkedin.com/in/raymond-chang-17a7a5186 \\
+    Website: raymondchang.ca
+\end{center}
+
+\section{Skills} \hrulefill
+\begin{itemize}[noitemsep]
+    \item Proficient: Python, C++, C, Java. also experienced with: TypeScript, SQL
+    \item Technologies: Git, Sqlite, GNU Make
+\end{itemize}
+
+\smallskip
+
+\section{Education} \hrulefill
+
+\textbf{University of Waterloo} \hfill September 2022 - Present
+
+Masters of Mathematics in Computer Science (Thesis)
+
+\hfill
+
+\textbf{University of Ottawa} \hfill September 2016 - April 2021
+
+Honours Bachelor of Science in Computer Science (CO-OP) \\ Deans Honours List \\ Honours project - Modelling and verifying leader election algorithms with TLA+.
+\smallskip
+
+\section{Work Experience}
+
+\hrulefill \\
+\textbf{Blackberry QNX} \hfill June 2020 - August 2020 \\
+CoreOS Software Development Student
+\begin{itemize}[noitemsep]
+    \item Worked on a Python script to detect instructions that modify floating point registers
+    \item Developed Unit tests for the QNX Neutrino RTOS and QNX Hypervisor
+    \item Increased knowledge of Assembly, C and Operating System Architecture
+    \item Used Git and GNU Make
+    \item Gained experience in using the QNX Neutrino RTOS
+    \item Participated in daily scrum meetings
+\end{itemize}
+
+\textbf{Blackberry QNX}
+\hfill September 2019 - December 2019 \\ CoreOS Software Development Student
+\begin{itemize}[noitemsep]
+    \item Developed Unit tests for the QNX Neutrino RTOS and QNX Hypervisor
+    \item Setup a QNX Hypervisor System with an Ubuntu guest on the R-CAR H3
+    \item Worked on a Python script to test and track new commits to Review Board
+    \item Increased knowledge of Assembly, C and Operating System Architecture
+    \item Used Git and GNU Make
+    \item Gained experience in using the QNX Neutrino RTOS
+    \item Participated in daily scrum meetings
+\end{itemize}
+
+\textbf{Ford Motor Company}
+\hfill January 2019 - April 2019 \\ Telematics Control Unit Software Developer
+\begin{itemize}[noitemsep]
+    \item Developed features and Unit tests for C and C++ multi-threaded Linux applications on the Telematics Control Unit
+    \item Fixed bugs and multithreading related issues found by code analysis tools such as Thread Sanitizer and Clang Static Analyzer
+    \item Wrote Python scripts using the Slash testing framework to test changes
+    \item Increased knowledge of Shell scripting and GNU Make
+    \item Used Git, Jenkins and the Google repo tool
+    \item Participated in daily scrum meetings and used JIRA for issue tracking
+\end{itemize}
+\newpage
+
+\textbf{Canadian Border Services Agency}
+\hfill May 2018 - August 2018 \\ Junior Programmer
+\begin{itemize}[noitemsep]
+    \item Worked in a team of three to create a web application for the management of software development using Java, JSP, Hibernate, jQuery and Spring MVC
+    \item Developed functional UI Mock-ups for the web application using HTML, CSS and JavaScript
+    \item Gathered the necessary requirements for the web application and participated in weekly progress meetings
+    \item Increased knowledge of SQL by writing scripts for the initial creation of the database and testing
+    \item Wrote JUnit Tests for a separate reporting application
+    \item Acquired the Enhanced Reliability Status level of security clearance
+\end{itemize}
+
+\section{Projects}
+\hrulefill \\
+\textbf{Juice - Java Compiler - Course project for CS644} \hfill January 2023 - April 2023
+\begin{itemize}[noitemsep]
+    \item Worked in a team of three to implement a x86 compiler for a large subset of the Java programming language
+    \item Consisted of 28753 lines of TypeScript, 628 Jest unit tests (~80\% coverage) and passed the majority of course provided test cases
+    \item Was the main author of the lexer, various compiler passes and the intermediate representation (IR) generator and canonicalizer
+    \item Ported and upgraded an existing IR interpreter from Java to TypeScript
+    \item Wrote hundreds of Jest unit tests
+    \item Source code available upon request
+\end{itemize}
+
+\textbf{Lettuce - New Programming Language and LLVM based compiler} \hfill July 2023 - Now
+\begin{itemize}[noitemsep]
+    \item Worked with a partner to create a new programming language and corresponding compiler using the LLVM compiler infrastructure
+    \item Developed compiler in C++ and added an interpreter mode
+    \item Created a new IR using MLIR
+    \item Wrote unit tests with GoogleTest
+    \item Created the build system and dependency management using CMake and Bash scripts
+    \item Source code: https://github.com/rkchang/mlidk
+\end{itemize}
+
+\textbf{DNS Server} \hfill December 2021 - Now
+\begin{itemize}[noitemsep]
+    \item Currently writing a DNS server in C++ using the ASIO library
+    \item Wrote unit tests with GoogleTest
+    \item Used CMake and Bazel for the build system and dependency management
+    \item Source code: https://github.com/rkchang/rcdns
+\end{itemize}
+
+\textbf{Document Search Engine - Course project for CSI4107} \hfill January 2020 - April 2020
+\begin{itemize}[noitemsep]
+    \item Worked with a partner to create a search engine for searching through a collection of xml and html documents
+    \item Source code: https://github.com/rkchang/search-engine
+\end{itemize}
+
+\end{document}
