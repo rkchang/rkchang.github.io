@@ -3,6 +3,10 @@
 \usepackage{enumitem}
 \usepackage{float}
 \usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,       % false: boxed links; true: colored links
+    urlcolor=blue        % color of external links
+}
 \input{glyphtounicode}
 %Lower amount of white space around headers
 \usepackage[compact]{titlesec}
@@ -27,13 +31,11 @@
     {\huge\textbf{Raymond Chang}} \\
     Email: rkchang@uwaterloo.ca \\
     LinkedIn: \url{www.linkedin.com/in/raymond-chang-17a7a5186} \\
-    Website: \url{https://www.raymondchang.ca/}
-\end{center}
+    Website: \url{https://www.raymondchang.ca/} \\ \end{center}
 
-\section{Skills} \hrulefill
-\begin{itemize}[noitemsep]
-    \item Proficient: Python, C++, C, Java. also experienced with: TypeScript, SQL
-    \item Technologies: Git, Sqlite, GNU Make, Spring, CMake, PostgreSQL
+\section{Skills} \hrulefill \begin{itemize}[noitemsep] \item Proficient: Python, C++, C, Java, SQL.
+          also experienced with: TypeScript
+    \item Technologies: Git, SQLite, GNU Make, Spring, CMake, PostgreSQL
 \end{itemize}
 
 \smallskip
@@ -48,7 +50,7 @@ Masters of Mathematics in Computer Science (Thesis)
 
 \textbf{University of Ottawa} \hfill September 2016 - April 2021
 
-Honours Bachelor of Science in Computer Science (CO-OP) \\ Deans Honours List \\ Honours project - Modelling and verifying leader election algorithms with TLA+.
+Honours Bachelor of Science in Computer Science (CO-OP) \\ Deans Honours List \\ Honours project - Modelling and verifying distributed leader election algorithms with TLA+.
 \smallskip
 
 \section{Work Experience}
@@ -57,12 +59,8 @@ Honours Bachelor of Science in Computer Science (CO-OP) \\ Deans Honours List \\
 \textbf{Blackberry QNX} \hfill June 2020 - August 2020 \\
 CoreOS Software Development Student
 \begin{itemize}[noitemsep]
-    \item Worked on a Python script to detect instructions that modify floating point registers
+    \item Worked on a program to detect instructions that modify floating point registers
     \item Developed Unit tests for the QNX Neutrino RTOS and QNX Hypervisor
-    \item Increased knowledge of Assembly, C and Operating System Architecture
-    \item Used Git and GNU Make
-    \item Gained experience in using the QNX Neutrino RTOS
-    \item Participated in daily scrum meetings
 \end{itemize}
 
 \textbf{Blackberry QNX}
@@ -71,21 +69,16 @@ CoreOS Software Development Student
     \item Developed Unit tests for the QNX Neutrino RTOS and QNX Hypervisor
     \item Setup a QNX Hypervisor System with an Ubuntu guest on the R-CAR H3
     \item Worked on a Python script to test and track new commits to Review Board
-    \item Increased knowledge of Assembly, C and Operating System Architecture
-    \item Used Git and GNU Make
-    \item Gained experience in using the QNX Neutrino RTOS
-    \item Participated in daily scrum meetings
+    \item Increased knowledge of Assembly, C, GNU Make and Operating System design
 \end{itemize}
 
 \textbf{Ford Motor Company}
 \hfill January 2019 - April 2019 \\ Telematics Control Unit Software Developer
 \begin{itemize}[noitemsep]
     \item Developed features and Unit tests for C and C++ multi-threaded Linux applications on the Telematics Control Unit
-    \item Fixed bugs and multithreading related issues found by code analysis tools such as Thread Sanitizer and Clang Static Analyzer
+    \item Fixed bugs and mutithreading related issues found by code analysis tools such as Thread Sanitizer and Clang Static Analyzer
     \item Wrote Python scripts using the Slash testing framework to test changes
-    \item Increased knowledge of Shell scripting and GNU Make
-    \item Used Git, Jenkins and the Google repo tool
-    \item Participated in daily scrum meetings and used JIRA for issue tracking
+    \item Increased knowledge of Bash scripting and GNU Make
 \end{itemize}
 \newpage
 
@@ -112,28 +105,26 @@ CoreOS Software Development Student
     \item Source code available upon request
 \end{itemize}
 
-\textbf{Lettuce - New Programming Language and LLVM based compiler} \hfill July 2023 - Now
+\textbf{Lettuce - New Programming Language and LLVM based compiler} \hfill July 2023 - August 2023
 \begin{itemize}[noitemsep]
     \item Worked with a partner to create a new programming language and corresponding compiler using the LLVM compiler infrastructure
     \item Developed compiler in C++ and added an interpreter mode
     \item Created a new IR using MLIR
-    \item Wrote unit tests with GoogleTest
     \item Created the build system and dependency management using CMake and Bash scripts
-    \item Source code: https://github.com/rkchang/mlidk
+    \item Source code: \url{https://github.com/rkchang/mlidk}
 \end{itemize}
 
 \textbf{DNS Server} \hfill December 2021 - Now
 \begin{itemize}[noitemsep]
     \item Currently writing a DNS server in C++ using the ASIO library
-    \item Wrote unit tests with GoogleTest
     \item Used CMake and Bazel for the build system and dependency management
-    \item Source code: https://github.com/rkchang/rcdns
+    \item Source code: \url{https://github.com/rkchang/rcdns}
 \end{itemize}
 
 \textbf{Document Search Engine - Course project for CSI4107} \hfill January 2020 - April 2020
 \begin{itemize}[noitemsep]
     \item Worked with a partner to create a search engine for searching through a collection of xml and html documents
-    \item Source code: https://github.com/rkchang/search-engine
+    \item Source code: \url{https://github.com/rkchang/search-engine}
 \end{itemize}
 
 \end{document}
