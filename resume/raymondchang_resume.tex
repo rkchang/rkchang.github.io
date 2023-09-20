@@ -1,8 +1,11 @@
 
-\documentclass{article}
+\documentclass[10pt]{article}
 \usepackage{enumitem}
 \usepackage{float}
 \usepackage{hyperref}
+\usepackage{ifsym}
+\usepackage{fontawesome5}
+\usepackage[default,oldstyle,scale=0.95]{opensans}
 \hypersetup{
     colorlinks=true,       % false: boxed links; true: colored links
     urlcolor=blue        % color of external links
@@ -11,7 +14,7 @@
 %Lower amount of white space around headers
 \usepackage[compact]{titlesec}
 \titlespacing\section{0pt}{0pt plus 0pt minus 0pt}{0pt plus 0pt minus 0pt}
-\titlespacing\subsection{0pt}{0pt plus 0pt minus 0pt}{0pt plus 0pt minus 0pt}
+\titlespacing*{\subsection}{0pt}{0pt plus 0pt minus 0pt}{0pt plus 0pt minus 0pt}
 % spacing: how to read {12pt plus 4pt minus 2pt}
 %           12pt is what we would like the spacing to be
 %           plus 4pt means that TeX can stretch it by at most 4pt
@@ -29,18 +32,18 @@
 \begin{document}
 \begin{center}
     {\huge\textbf{Raymond Chang}} \\
-    Email: rkchang@uwaterloo.ca \\
-    LinkedIn: \url{www.linkedin.com/in/raymond-chang-17a7a5186} \\
-    Website: \url{https://www.raymondchang.ca/} \\ \end{center}
+    \faIcon{envelope} \href{mailto:rkchang@uwaterloo.ca}{rkchang@uwaterloo.ca}  \space\space
+    \faIcon{github} \url{github.com/rkchang} \space\space
+    \faIcon{linkedin} \url{linkedin.com/in/raymond-chang-17a7a5186} \\
+    \faIcon{mouse-pointer} \url{raymondchang.ca/} \\ \end{center}
 
-\section{Skills} \hrulefill \begin{itemize}[noitemsep] \item Proficient: Python, C++, C, Java, SQL.
-          also experienced with: TypeScript
-    \item Technologies: Git, SQLite, GNU Make, Spring, CMake, PostgreSQL
+{\Large\textbf{Skills}}\space \hrulefill \begin{itemize}[noitemsep] \item Proficient: Python, C++, C, Java, SQL, TypeScript
+    \item Technologies: Git, SQLite, GNU Make, Spring, CMake, PostgreSQL,
 \end{itemize}
 
 \smallskip
 
-\section{Education} \hrulefill
+{\Large\textbf{Education}}\space \hrulefill
 
 \textbf{University of Waterloo} \hfill September 2022 - Present
 
@@ -51,11 +54,10 @@ Masters of Mathematics in Computer Science (Thesis)
 \textbf{University of Ottawa} \hfill September 2016 - April 2021
 
 Honours Bachelor of Science in Computer Science (CO-OP) \\ Deans Honours List \\ Honours project - Modelling and verifying distributed leader election algorithms with TLA+.
-\smallskip
+\bigskip
 
-\section{Work Experience}
+{\Large\textbf{Work Experience}}\space \hrulefill
 
-\hrulefill \\
 \textbf{Blackberry QNX} \hfill June 2020 - August 2020 \\
 CoreOS Software Development Student
 \begin{itemize}[noitemsep]
@@ -69,7 +71,6 @@ CoreOS Software Development Student
     \item Developed Unit tests for the QNX Neutrino RTOS and QNX Hypervisor
     \item Setup a QNX Hypervisor System with an Ubuntu guest on the R-CAR H3
     \item Worked on a Python script to test and track new commits to Review Board
-    \item Increased knowledge of Assembly, C, GNU Make and Operating System design
 \end{itemize}
 
 \textbf{Ford Motor Company}
@@ -78,9 +79,7 @@ CoreOS Software Development Student
     \item Developed features and Unit tests for C and C++ multi-threaded Linux applications on the Telematics Control Unit
     \item Fixed bugs and mutithreading related issues found by code analysis tools such as Thread Sanitizer and Clang Static Analyzer
     \item Wrote Python scripts using the Slash testing framework to test changes
-    \item Increased knowledge of Bash scripting and GNU Make
 \end{itemize}
-\newpage
 
 \textbf{Canadian Border Services Agency}
 \hfill May 2018 - August 2018 \\ Junior Programmer
@@ -93,14 +92,14 @@ CoreOS Software Development Student
     \item Acquired the Enhanced Reliability Status level of security clearance
 \end{itemize}
 
-\section{Projects}
-\hrulefill \\
+\newpage
+
+{\Large\textbf{Projects}}\space \hrulefill
+
 \textbf{Juice - Java Compiler - Course project for CS644} \hfill January 2023 - April 2023
 \begin{itemize}[noitemsep]
     \item Worked in a team of three to implement a x86 compiler for a large subset of the Java programming language
     \item Consisted of 28753 lines of TypeScript, 628 Jest unit tests (~80\% coverage) and passed the majority of course provided test cases
-    \item Was the main author of the lexer, various compiler passes and the intermediate representation (IR) generator and canonicalizer
-    \item Made major design decisions about the the IR and closely consulted with group members
     \item Ported and upgraded an existing IR interpreter from Java to TypeScript
     \item Wrote hundreds of Jest unit tests
     \item Source code available upon request
