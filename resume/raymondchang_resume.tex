@@ -33,12 +33,15 @@
 \begin{center}
     {\huge\textbf{Raymond Chang}} \\
     \faIcon{envelope} \href{mailto:rkchang@uwaterloo.ca}{rkchang@uwaterloo.ca}  \space\space
-    \faIcon{github} \url{github.com/rkchang} \space\space
-    \faIcon{linkedin} \url{linkedin.com/in/raymond-chang-17a7a5186} \\
-    \faIcon{mouse-pointer} \url{raymondchang.ca/} \\ \end{center}
+    \faIcon{github} \href{https://github.com/rkchang}{github.com/rkchang} \space\space
+    \faIcon{linkedin} \href{https://linkedin.com/in/rkhchang}{linkedin.com/in/rkhchang} \\
+    \faIcon{mouse-pointer} \href{https://raymondchang.ca/}{raymondchang.ca} \\ \end{center}
 
-{\Large\textbf{Skills}}\space \hrulefill \begin{itemize}[noitemsep] \item Proficient: Python, C++, C, Java, SQL, TypeScript
+{\Large\textbf{Skills}}\space \hrulefill
+\begin{itemize}[noitemsep]
+    \item Proficient: Python, C++, C, Java, SQL, TypeScript
     \item Technologies: Git, SQLite, GNU Make, Spring, CMake, PostgreSQL,
+    \item Selected course work:  Design \& Analysis of Algorithms, Performance Engineering, Information Retrieval, Compiler Construction, Operating Systems, Databases, Artificial Intelligence, Language Design and Implementation
 \end{itemize}
 
 \smallskip
@@ -61,33 +64,30 @@ Honours Bachelor of Science in Computer Science (CO-OP) \\ Deans Honours List \\
 \textbf{Blackberry QNX} \hfill June 2020 - August 2020 \\
 CoreOS Software Development Student
 \begin{itemize}[noitemsep]
-    \item Worked on a program to detect instructions that modify floating point registers
-    \item Developed Unit tests for the QNX Neutrino RTOS and QNX Hypervisor
+    \item Developed a program to detect illegal instructions in the kernel binary by using binary analysis tools
+    \item Wrote Unit tests for the QNX Neutrino RTOS and QNX Hypervisor
 \end{itemize}
 
 \textbf{Blackberry QNX}
 \hfill September 2019 - December 2019 \\ CoreOS Software Development Student
 \begin{itemize}[noitemsep]
-    \item Developed Unit tests for the QNX Neutrino RTOS and QNX Hypervisor
-    \item Setup a QNX Hypervisor System with an Ubuntu guest on the R-CAR H3
-    \item Worked on a Python script to test and track new commits to Review Board
+    \item Worked on a program to test and track new commits to Review Board
+    \item Setup a QNX Hypervisor System with an Ubuntu guest to demonstrate its abilities to other teams
+    \item Wrote Unit tests for the QNX Neutrino RTOS and QNX Hypervisor
 \end{itemize}
 
 \textbf{Ford Motor Company}
 \hfill January 2019 - April 2019 \\ Telematics Control Unit Software Developer
 \begin{itemize}[noitemsep]
-    \item Developed features and Unit tests for C and C++ multi-threaded Linux applications on the Telematics Control Unit
+    \item Developed features and Unit tests for C and C++ multi-threaded Linux applications
     \item Fixed bugs and mutithreading related issues found by code analysis tools such as Thread Sanitizer and Clang Static Analyzer
-    \item Wrote Python scripts using the Slash testing framework to test changes
 \end{itemize}
 
 \textbf{Canadian Border Services Agency}
 \hfill May 2018 - August 2018 \\ Junior Programmer
 \begin{itemize}[noitemsep]
-    \item Worked in a team of three to create a web application for the management of software development using Java, JSP, Hibernate, jQuery and Spring MVC
+    \item Worked in a team of three to create a web application for the management of software development using Java, JSP, Hibernate, jQuery, SQL and Spring MVC
     \item Developed functional UI Mock-ups for the web application using HTML, CSS and JavaScript
-    \item Gathered the necessary requirements for the web application and participated in weekly progress meetings
-    \item Increased knowledge of SQL by writing scripts for the initial creation of the database and testing
     \item Wrote JUnit Tests for a separate reporting application
     \item Acquired the Enhanced Reliability Status level of security clearance
 \end{itemize}
@@ -96,12 +96,13 @@ CoreOS Software Development Student
 
 {\Large\textbf{Projects}}\space \hrulefill
 
-\textbf{Juice - Java Compiler - Course project for CS644} \hfill January 2023 - April 2023
+\textbf{Juice - Java Compiler - Course project for Compiler Construction} \hfill January 2023 - April 2023
 \begin{itemize}[noitemsep]
-    \item Worked in a team of three to implement a x86 compiler for a large subset of the Java programming language
-    \item Consisted of 28753 lines of TypeScript, 628 Jest unit tests (~80\% coverage) and passed the majority of course provided test cases
-    \item Ported and upgraded an existing IR interpreter from Java to TypeScript
-    \item Wrote hundreds of Jest unit tests
+    \item Developed a Java compiler targeting x86 with two teammates
+    \item Consisted of 28753 lines of TypeScript and passed the majority of course provided test cases
+    \item Ported and upgraded an existing Intermediate Representation (IR) interpreter from Java to TypeScript to improve the debugging process
+    \item Made major design decisions about the IR and closely consulted with group members
+    \item Wrote hundreds of Jest unit tests with final code coverage of 80\% and total test count of 628 Jest unit tests
     \item Source code available upon request
 \end{itemize}
 
@@ -110,21 +111,19 @@ CoreOS Software Development Student
     \item Worked with a partner to create a new programming language and corresponding compiler using the LLVM compiler infrastructure
     \item Developed compiler in C++ and added an interpreter mode
     \item Created a new IR using MLIR
-    \item Created the build system and dependency management using CMake and Bash scripts
     \item Source code: \url{https://github.com/rkchang/mlidk}
+\end{itemize}
+
+\textbf{Document Search Engine - Course project for Information Retrieval} \hfill January 2020 - April 2020
+\begin{itemize}[noitemsep]
+    \item Worked with a partner to create a search engine and UI for searching through a collection of course listings and news articles by using the Flask web framework
+    \item Source code: \url{https://github.com/rkchang/search-engine}, Final report available upon request
 \end{itemize}
 
 \textbf{DNS Server} \hfill December 2021 - Now
 \begin{itemize}[noitemsep]
     \item Currently writing a DNS server in C++ using the ASIO library
-    \item Used CMake and Bazel for the build system and dependency management
     \item Source code: \url{https://github.com/rkchang/rcdns}
-\end{itemize}
-
-\textbf{Document Search Engine - Course project for CSI4107} \hfill January 2020 - April 2020
-\begin{itemize}[noitemsep]
-    \item Worked with a partner to create a search engine for searching through a collection of course listings and news articles using Flask
-    \item Source code: \url{https://github.com/rkchang/search-engine}, Final report available upon request
 \end{itemize}
 
 \end{document}
