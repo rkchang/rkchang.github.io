@@ -26,10 +26,9 @@
 % Ensure resume is parsable by ATS
 \input{glyphtounicode}
 \pdfgentounicode=1
-
-\usepackage{geometry}
-\geometry{margin=1in}
-\setcounter{secnumdepth}{0}
+% Modify margins of page
+% \usepackage{showframe}
+\usepackage[top=0.2in, bottom=1in, left=0.5in, right=0.5in]{geometry} \setcounter{secnumdepth}{0}
 \setlength{\parindent}{0pt}
 \begin{document}
 \begin{center}
@@ -113,12 +112,6 @@ Canadian Border Services Agency
     \item Pull request: \url{https://github.com/llvm/llvm-project/pull/70233}
 \end{itemize} 
 
-\begin{center}
-    \textit{Please see Page 2 for Selected Projects}
-\end{center}
-
-\newpage
-
 {\Large\textbf{Selected Projects}}\space \hrulefill
 
 \textbf{Juice: Java Compiler - Course project for Compiler Construction} \hfill 01/2023 to 04/2023
@@ -128,6 +121,10 @@ Canadian Border Services Agency
     \item Ported and upgraded an existing Intermediate Representation (IR) interpreter from Java to TypeScript to improve the debugging process
     \item Wrote hundreds of Jest unit tests with final code coverage of 80\%
 \end{itemize}
+
+\begin{center}
+    \textit{Please see Page 2 for more Selected Projects}
+\end{center}
 
 \textbf{Lettuce - New Programming Language and LLVM based compiler} \hfill 07/2023 to 08/2023
 \begin{itemize}[noitemsep]
