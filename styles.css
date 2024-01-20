@@ -16,24 +16,8 @@ a {
   color: dodgerblue;
 }
 
-/* h1 {
-  font-size: 5.3vw;
-}
-
-h2 {
-  font-size: 3.0vh;
-}
-
-li {
-  font-size: 3vmin;
-}
-
-p {
-  font-size: 3vmin;
-} */
-
-.blurb {
-  
+ul {
+  margin-top: -15px;
 }
 
 /* Extra small devices (phones, 600px and down) */
