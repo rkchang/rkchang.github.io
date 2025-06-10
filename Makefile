@@ -1,10 +1,14 @@
-docs:
-	mkdir -p docs
-	cd portfolio && npm run build
+publish: web
+
+resume:
+	cd resume && latexmk -pdf
 	cp resume/Raymond_Chang_resume.pdf portfolio/public/
-	cp -r portfolio/dist/* docs
+
+web: resume
+	cd portfolio && npm run build
+	cp -r portfolio/dist/* .
 
 clean:
-	rm -rf docs
+	ls portfolio/dist | xargs -I _ rm -rf _
 
-.PHONY: clean
+.PHONY: clean publish resume

@@ -13,7 +13,7 @@ function ProfileCard() {
       }}
     >
       <Avatar
-        src="pic2.jpeg"
+        src="pic.jpeg"
         alt="A picture of me"
         sx={{
           width: { xs: 150, md: 200 },
