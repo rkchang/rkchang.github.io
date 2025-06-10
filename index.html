@@ -7,10 +7,138 @@
   <meta name="author" content="Raymond Chang">
   <meta name="description" content="Raymond Chang's personal website">
   <title>Raymond Chang</title>
-  <link rel="stylesheet" href="styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <style>
+    body {
+      font-family: 'Open Sans', sans-serif;
+      display: flex;
+      justify-content: center;
+      height: 100%;
+      margin: 0;
+      padding: 20px;
+      box-sizing: border-box;
+      font-size: 14px;
+      background-color: #fefcf8;
+    }
+
+    hr {
+      border-width: 1px;
+      width: 100%;
+      text-align: left;
+      margin-left: 0
+    }
+
+    a {
+      color: dodgerblue;
+    }
+
+    ul {
+      margin-top: -15px;
+    }
+
+    p {
+      margin-bottom: 1em;
+    }
+
+    /* Style for social media icons */
+    .social-icon {
+      font-size: 1.5em;
+      text-decoration: none;
+      margin-right: 0.5em;
+    }
+
+    .social-icon:hover {
+      opacity: 0.7;
+    }
+
+    /* Resume button styling */
+    .resume-button {
+      display: inline-block;
+      background-color: dodgerblue;
+      color: white;
+      padding: 8px 16px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: bold;
+      margin-right: 0.5em;
+      margin-bottom: 0.5em;
+      transition: background-color 0.3s ease;
+    }
+
+    .resume-button:hover {
+      background-color: #1976d2;
+      color: white;
+    }
+
+    /* Mobile first - phones */
+    .center {
+      display: flex;
+      margin-right: 5%;
+      margin-left: 5%;
+      flex-direction: column;
+      justify-content: space-around;
+      max-width: 650px;
+      width: 100%;
+    }
+
+    .card {
+      display: flex;
+      margin-top: 2%;
+      margin-bottom: 2%;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .profile {
+      height: auto;
+      width: auto;
+      max-width: 65%;
+      max-height: 50%;
+      border-radius: 50%;
+    }
+
+    .contact {
+      margin-left: 5%;
+      margin-right: 5%;
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    .blurb {
+      margin-bottom: 2em;
+    }
+
+    /* Large screens - side by side layout */
+    @media only screen and (min-width: 768px) {
+      .card {
+        flex-direction: row;
+        text-align: left;
+      }
+
+      .contact {
+        text-align: left;
+        margin-top: 0;
+        flex: 6;
+      }
+
+      .profile {
+        flex: 3;
+      }
+    }
+
+    /* Extra large screens - more margin */
+    @media only screen and (min-width: 1200px) {
+      .center {
+        margin-right: 20%;
+        margin-left: 20%;
+      }
+    }
+  </style>
 </head>
 
 <body>
@@ -19,9 +147,11 @@
       <img class="profile" src="pic.jpeg" alt="A picture of me">
       <div class="contact">
         <h1>Raymond Chang</h1>
-        <p><em>Resume:</em> <a href="resume/Raymond_Chang_resume.pdf">Download</a></p>
-        <p><em>Github:</em> <a href="https://github.com/rkchang">https://github.com/rkchang</a></p>
-        <p><em>LinkedIn:</em> <a href="https://linkedin.com/in/rkhchang">https://www.linkedin.com/in/rkhchang/</a> </p>
+        <p>
+          <a href="resume/Raymond_Chang_resume.pdf" class="resume-button" title="Resume">Resume</a>
+          <a href="https://github.com/rkchang" class="social-icon" title="GitHub"><i class="fab fa-github"></i></a>
+          <a href="https://linkedin.com/in/rkhchang" class="social-icon" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        </p>
       </div>
     </div>
     <div class="blurb">
@@ -34,75 +164,75 @@
     <div>
       <h2>Education</h2>
       <div>
-        <p>
-          <em>University of Waterloo</em> </br>
-          Masters of Mathematics in Computer Science (Thesis) (95%) </br>
-          Supervisor: Professor Chengnian Sun </br>
-          Teaching Assistant for: Databases, Operating Systems, Algorithms, Software Analysis and Testing </br>
-        </p>
-      <div>
-        <p>
-          <em>University of Ottawa</em> </br>
-          Honours Bachelor of Science in Computer Science (CO-OP) (8.35/10) </br>
-          Deans Honours List </br>
-          Honours project - Modelling and verifying distributed leader election algorithms with TLA+ </br>
-        </p>
+        <p><b><a href="https://uwaterloo.ca">University of Waterloo</a></b><br>
+        Masters of Mathematics in Computer Science (Thesis) (95%)</p>
+        <ul>
+          <li>Supervisor: Professor Chengnian Sun</li>
+          <li>Teaching Assistant for: Databases, Operating Systems, Algorithms, Software Analysis and Testing</li>
+        </ul>
       </div>
+      <div>
+        <p><b><a href="https://uottawa.ca">University of Ottawa</a></b><br>
+        Honours Bachelor of Science in Computer Science (CO-OP) (8.35/10)</p>
+        <ul>
+          <li>Deans Honours List</li>
+          <li>Honours project - Modelling and verifying distributed leader election algorithms with TLA+</li>
+        </ul>
+      </div>
+
       <h2>Work Experience</h2>
       <div>
         <p>
-          <em>Software Engineer</em> </br>
-          Arista Networks
+          <b><a href="https://arista.com">Arista Networks</a></b><br>
+          Software Engineer
         </p>
-        <p>
-          <em>CoreOS Software Development Student</em> </br>
-          Blackberry QNX
-        </p>
-      <div>
+      </div>
       <div>
         <p>
-          <em>CoreOS Software Development Student</em> </br>
-          Blackberry QNX
+          <b><a href="https://blackberry.qnx.com">Blackberry QNX</a></b><br>
+          CoreOS Software Development Student
         </p>
-      <div>
+      </div>
       <div>
         <p>
-          <em>Telematics Control Unit Software Developer</em> </br>
-          Ford Motor Company
+          <b><a href="https://ford.com">Ford Motor Company</a></b><br>
+          Telematics Control Unit Software Developer
         </p>
-      <div>
+      </div>
       <div>
         <p>
-          <em>Junior Programmer</em> </br>
-          Canadian Border Services Agency
+          <b><a href="https://cbsa-asfc.gc.ca">Canadian Border Services Agency</a></b><br>
+          Junior Programmer
         </p>
-      <div>
+      </div>
+
       <h2>Open Source Contributions</h2>
       <div>
         <p>
-          <em>The LLVM Compiler Infrastructure Project</em> </br>
+          <b><a href="https://llvm.org">The LLVM Compiler Infrastructure Project</a></b><br>
           Merged PRs:
           <ul>
             <li><a href="https://github.com/llvm/llvm-project/pull/70233">https://github.com/llvm/llvm-project/pull/70233</a></li>
           </ul>
         </p>
-      <div>
+      </div>
+
       <h2>Selected Projects</h2>
       <div>
         <p>
-          <b><a href="">Java Compiler</a></b> </br>
+          <b><a href="">Java Compiler</a></b><br>
           A compiler for a significant subset of Java that targets x86 written by myself and two teammates. Includes a custom intermediate representation (IR) and IR interpreter. Made for the Compiler Construction (CS444/CS644) class at the University of Waterloo.
         </p>
       </div>
       <div>
         <p>
-          <b><a href="https://github.com/rkchang/mlidk">Lettucec</a></b> </br>
+          <b><a href="https://github.com/rkchang/mlidk">Lettucec</a></b><br>
           A LLVM based compiler for a programming language written by myself and a teammate. Includes a custom IR created with MLIR.
         </p>
       </div>
       <div>
         <p>
-          <b><a href="https://github.com/rkchang/rcdns">rcdns</a></b> </br>
+          <b><a href="https://github.com/rkchang/rcdns">rcdns</a></b><br>
           A DNS server written in C++ using the ASIO networking library. My current goal for this project is to experiment with different concurrency designs and as a playground for performance profiling tools I'm interested in. It currently has a Bazel based build system (with modules!) and uses GoogleTest for unit testing
         </p>
       </div>
